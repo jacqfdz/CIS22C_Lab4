@@ -8,16 +8,16 @@ class BSTNode
 public:
 	BSTNode* left;
 	BSTNode* right;
-	//Currency* data;
+	Currency* data;
 
 	BSTNode() {
 		left = nullptr;
 		right = nullptr;
-		//data = nullptr;
+		data = nullptr;
 	}
 
 	~BSTNode() {
-		//delete data;
+		delete data;
 	}
 };
 
