@@ -16,8 +16,8 @@ public:
 	BST() { root = nullptr; count = 0; }
 
 	void insertNode(Currency* insertee);
-	Currency* deleteNode(Currency* removee);
-	Currency* search(Currency* searchee) const;
+	bool deleteNode(Currency* removee);
+	BSTNode* search(Currency* searchee) const;
 	int getCount() const { return count; }
 	bool isEmpty() const { return count == 0; }
 	std::string printBreadthFirst() const;

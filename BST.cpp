@@ -36,6 +36,6 @@ void BST::insertNode(Currency* insertee) {
 	count++;
 }
 
-Currency* BST::deleteNode(Currency* removee) {
+bool BST::deleteNode(Currency* removee) {
 
 }
