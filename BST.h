@@ -13,14 +13,11 @@ private:
 public:
 	BST() { root = nullptr; count = 0; }
 
-
 	void insertNode(Currency* insertee);
-	/*
 	Currency* deleteNode(Currency* removee);
 	Currency* search(Currency* searchee) const;
 	void print() const;
-	int getCount() const;
-	bool isEmpty() const;
-	*/
+	int getCount() const { return count; }
+	bool isEmpty() const { return count == 0; }
 };
 #endif

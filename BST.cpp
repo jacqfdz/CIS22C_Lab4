@@ -10,9 +10,29 @@ void BST::insertNode(Currency* insertee) {
 		root = newNode;
 	}
 	else {
-		//search for node before correct placement
 		BSTNode* curr = root;
 
+		while (curr) {
+			if (curr->data->isGreater(insertee)) {
+				if (curr->left) {
+					curr = curr->left;
+				}
+				else {
+					curr->left = newNode;
+					curr = nullptr;
+				}
+			}
+			else {
+				if (curr->right) {
+					curr = curr->right;
+				}
+				else {
+					curr->right = newNode;
+					curr = nullptr;
+				}
+			}
+		}
 	}
 
+	count++;
 }
