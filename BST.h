@@ -1,6 +1,8 @@
 #ifndef BST_H
 #define BST_H
 
+#include <iostream>
+#include <string>
 #include "BSTNode.h"
 #include "Currency.h"
 
@@ -16,8 +18,11 @@ public:
 	void insertNode(Currency* insertee);
 	Currency* deleteNode(Currency* removee);
 	Currency* search(Currency* searchee) const;
-	void print() const;
 	int getCount() const { return count; }
 	bool isEmpty() const { return count == 0; }
+	std::string printBreadthFirst() const;
+	std::string printInOrder() const;
+	std::string printPreOrder() const;
+	std::string printPostOrder() const;
 };
 #endif

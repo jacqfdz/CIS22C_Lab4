@@ -1,5 +1,4 @@
 #include "BST.h"
-#include "Currency.h"
 #include "Krone.h"
 
 void BST::insertNode(Currency* insertee) {
@@ -35,4 +34,8 @@ void BST::insertNode(Currency* insertee) {
 	}
 
 	count++;
+}
+
+Currency* BST::deleteNode(Currency* removee) {
+
 }
