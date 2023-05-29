@@ -1,3 +1,7 @@
+/*
+* Changes: fixed broken isGreater method.
+*/
+
 #include "Currency.h"
 
 Currency::Currency() {
@@ -116,6 +120,9 @@ bool Currency::isGreater(Currency* other) const {
 
 	if (whole > other->whole) {
 		return true;
+	}
+	else if (whole < other->whole) {
+		return false;
 	}
 
 	if (frac > other->frac) {
